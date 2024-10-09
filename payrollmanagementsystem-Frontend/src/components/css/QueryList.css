@@ -1,0 +1,72 @@
+.body{
+    font-family: 'Rubik',cursive;
+}
+
+.query-list-scroll {
+    max-height: 600px; 
+    width: 1100px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+  }
+  .query-list-scroll::-webkit-scrollbar {
+    width: 0; 
+  }
+
+  .query-list-table {
+    width: 100%;
+  }
+  
+  .query-list-table th,
+  .query-list-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .query-list-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #5467ff; /* Or any color you prefer */
+    color: white;
+    z-index: 10; /* Ensures the header is above the body */
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%); /* Start above the visible area */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(-10px); /* End in the original position */
+      opacity: 1; /* End fully visible */
+    }
+  }
+  
+  .query-list-error {
+    max-width: 300px; /* Match the width of the login card */
+    border-radius: 6px;
+    position: relative;
+    margin: 0.5rem auto; /* Center it horizontally */
+    top: 20px; /* Adjust the value to move it down */
+    z-index: 1000; /* Ensure it stays on top */
+    animation: slideDown 0.5s ease forwards; /* Apply the animation */
+    background-color: #f8d7da; /* Background color for the error message */
+    color: #721c24; /* Text color for the error message */
+    border: 1px solid #f5c6cb; /* Border color for the error message */
+    font-family: 'Rubik', cursive;
+  }
+
+  .query-list-success {
+    max-width: 300px; /* Match the width of the login card */
+    border-radius: 6px;
+    position: relative;
+    margin: 0.5rem auto; /* Center it horizontally */
+    top: 20px; /* Adjust the value to move it down */
+    z-index: 1000; /* Ensure it stays on top */
+    animation: slideDown 0.5s ease forwards; /* Apply the animation */
+    background-color: #d4edda; /* Updated background color for the success message */
+    color: #155724; /* Updated text color for better contrast */
+    border: 1px solid #d4edda; /* Border color for the error message */
+    font-family: 'Rubik', cursive;
+  }
+
+ 

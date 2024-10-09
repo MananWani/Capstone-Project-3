@@ -1,0 +1,36 @@
+body {
+    font-family: "Rubik", cursive; /* Make sure this font is loaded in your project */
+  }
+
+.employee-list-container .search-bar{
+  width: 400px;
+  
+}
+
+  .table-container {
+    max-height: 600px; /* Adjust this height as needed */
+    overflow-y: auto;
+    margin-bottom: 30px;
+
+  }
+  .table-container::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar for WebKit browsers */
+  }
+  .employee-table {
+    width: 100%;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .employee-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #5467ff; /* Or any color you prefer */
+    color: white;
+    z-index: 10; /* Ensures the header is above the body */
+  }
+  

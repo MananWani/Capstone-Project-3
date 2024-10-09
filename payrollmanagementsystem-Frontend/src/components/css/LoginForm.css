@@ -1,0 +1,87 @@
+.login-logo {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+}
+.login-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  width: 450px !important;
+  max-width: 500px;
+  font-family: "Rubik", cursive;
+  margin: auto I!important;
+  display: flex;
+  flex-direction: column; /* Ensure contents stack vertically */
+}
+
+.card-title {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.required-asterisk {
+  color: red;
+}
+
+.left-aligned {
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group {
+  text-align: left; /* Ensure the group aligns left */
+  font-size: 15px;
+  font-family: "Rubik", cursive;
+}
+
+.login-button {
+  font-family: "Rubik", cursive;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 7px 30px;
+  background-color: #5467ff;
+  border: none;
+  border-radius: 60px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.login-button:hover {
+  background-color: #3f4fe0;
+  color: white;
+}
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%); /* Start above the visible area */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(-10px); /* End in the original position */
+      opacity: 1; /* End fully visible */
+    }
+  }
+  
+  .fixed-error {
+    max-width: 100%; /* Match the width of the login card */
+    border-radius: 6px;
+    position: relative;
+    margin: 1rem auto; /* Center it horizontally */
+    top: 20px; /* Adjust the value to move it down */
+    z-index: 1000; /* Ensure it stays on top */
+    animation: slideDown 0.5s ease forwards; /* Apply the animation */
+    background-color: #f8d7da; /* Background color for the error message */
+    color: #721c24; /* Text color for the error message */
+    border: 1px solid #f5c6cb; /* Border color for the error message */
+    font-family: 'Rubik', cursive;
+  }
+  
+  

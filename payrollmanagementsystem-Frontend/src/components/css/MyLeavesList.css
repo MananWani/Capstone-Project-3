@@ -1,0 +1,24 @@
+.body{
+    font-family: 'Rubik',cursive;
+}
+
+  .my-leaves-table {
+    width: 700px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .my-leaves-table th,
+  .my-leaves-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .my-leaves-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #5467ff; /* Or any color you prefer */
+    color: white;
+    z-index: 10; /* Ensures the header is above the body */
+  }

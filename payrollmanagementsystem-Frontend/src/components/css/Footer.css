@@ -1,0 +1,41 @@
+.footer {
+    background-color: white;
+    color: #5467ff;
+    font-family: "Rubrik", cursive;
+    position: absolute; /* Changed from absolute to relative */
+    z-index: 10;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #5467ff; /* Heading color */
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #5467ff; /* Paragraph color */
+  }
+  
+  .footer a {
+    color: #5467ff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #3f4fe0;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    
+  }
+  
+  
+  
+ 
+  

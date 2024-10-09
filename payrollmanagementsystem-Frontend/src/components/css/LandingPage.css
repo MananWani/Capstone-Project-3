@@ -1,0 +1,82 @@
+.landing-page {
+    text-align: center;
+  }
+.particles-section {
+    position: relative;
+    height: 100vh; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px; 
+    width: 90%; 
+    color: #5467ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .overlay:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  }
+  
+  .overlay .h1 {
+    font-family: 'Rubik', cursive;
+    margin: 2px;
+  }
+  
+  .overlay .p {
+    font-family: 'Rubik', cursive;
+    margin: 12px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .landing-page-button {
+    font-family: 'Rubik', cursive; 
+    font-size: 1.25rem; 
+    color: white; 
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center; 
+    padding: 10px 30px; 
+    background-color: #5467ff; 
+    border: none; 
+    border-radius: 60px; 
+    margin-top: 20px; 
+    width: 350px; 
+  }
+  
+  .landing-page-button:hover {
+    background-color: #3f4fe0; 
+    color: white;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%); /* Start above the visible area */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(-20px); /* End in the original position */
+      opacity: 1; /* End fully visible */
+    }
+  }
+  .landing-error {
+    max-width: 400px; /* Match the width of the login card */
+    border-radius: 6px;
+    position: relative;
+    margin: 0.5rem auto; /* Center it horizontally */
+    top: 20px; /* Adjust the value to move it down */
+    z-index: 1000; /* Ensure it stays on top */
+    animation: slideDown 0.5s ease forwards; /* Apply the animation */
+    background-color: #f8d7da; /* Background color for the error message */
+    color: #721c24; /* Text color for the error message */
+    border: 1px solid #f5c6cb; /* Border color for the error message */
+    font-family: 'Rubik', cursive;
+  }

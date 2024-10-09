@@ -1,0 +1,117 @@
+/* Add Rubik font-family */
+body {
+  font-family: "Rubik", cursive; /* Make sure this font is loaded in your project */
+}
+
+/* Center text in modal header and buttons */
+.modal-footer {
+  justify-content: center !important; /* Center content in header and footer */
+}
+
+.modal-body {
+  text-align: left !important; /* Center text in the modal body */
+}
+
+/* Optional: Style for asterisk */
+.label-asterisk {
+  color: red; /* Change color of the asterisk */
+}
+.addrole-container {
+  font-family: "Rubik", cursive;
+}
+.addrole-container h4 {
+  margin-top: 20px;
+}
+.add-role-button {
+  font-family: "Rubik", cursive;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 30px;
+  background-color: #5467ff;
+  border: none;
+  border-radius: 60px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.add-role-button:hover {
+  background-color: #3f4fe0;
+  color: white;
+}
+
+.role-update-button {
+  font-family: "Rubik", cursive;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 30px;
+  background-color: #5467ff;
+  border: none;
+  border-radius: 60px;
+
+  width: 150px;
+}
+
+.role-update-button:hover {
+  background-color: #3f4fe0;
+  color: white;
+}
+
+.role-table {
+  width: 600px; /* Make sure the table takes full width of the container */
+  margin-left: 280px;
+}
+
+.role-table-head{
+  background-color: #5467ff; 
+    color: white;
+}
+th,
+td {
+  text-align: left; /* Align text to the left */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); /* Start above the visible area */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(-10px); /* End in the original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.role-error {
+  max-width: 300px; /* Match the width of the login card */
+  border-radius: 6px;
+  position: relative;
+  margin: 0.5rem auto; /* Center it horizontally */
+  top: 20px; /* Adjust the value to move it down */
+  z-index: 1000; /* Ensure it stays on top */
+  animation: slideDown 0.5s ease forwards; /* Apply the animation */
+  background-color: #f8d7da; /* Background color for the error message */
+  color: #721c24; /* Text color for the error message */
+  border: 1px solid #f5c6cb; /* Border color for the error message */
+  font-family: 'Rubik', cursive;
+}
+
+.role-success {
+  max-width: 300px; /* Match the width of the login card */
+  border-radius: 6px;
+  position: relative;
+  margin: 0.5rem auto; /* Center it horizontally */
+  top: 20px; /* Adjust the value to move it down */
+  z-index: 1000; /* Ensure it stays on top */
+  animation: slideDown 0.5s ease forwards; /* Apply the animation */
+  background-color: #d4edda; /* Updated background color for the success message */
+  color: #155724; /* Updated text color for better contrast */
+  border: 1px solid #d4edda; /* Border color for the error message */
+  font-family: 'Rubik', cursive;
+}
